@@ -1,0 +1,211 @@
+/* weird shit under */
+
+/* end of weird shit*/
+
+body {
+  background: #ecb069;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* Logo + Nav Bar on same line through .head class */
+.header {
+  margin-top: 0;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #431811;
+  justify-items: end;
+}
+.logo {
+  grid-column: 4;
+  grid-row: 1;
+  position: static;
+  height: 5rem;
+  float: right;
+}
+
+.navbar {
+  grid-column: 3;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+  margin-right: 0rem;
+}
+
+.navbar > ul {
+  text-align: justify;
+  list-style-type: none;
+}
+
+.navbar > li {
+  padding: 0rem;
+}
+
+.navbar > a {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5rem;
+}
+.navbutton {
+  color: wheat;
+  background-color: #28a428;
+  text-align: center;
+  display: inline-block;
+  margin: 0.3rem;
+  padding-top: 0.8rem;
+  margin-right: 0.2rem;
+  min-width: 5rem;
+  min-height: 2rem;
+}
+
+.navbutton > a:visited {
+  color: white;
+}
+
+/* wrapper to wrap shit inside*/
+.wrapper {
+  margin-top: 8%;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 5%;
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto; /* made a hole after 2x first for advertisment or someshit*/
+  column-gap: 0.2 rem;
+  row-gap: 2rem;
+  justify-items: center;
+  min-height: 100%;
+}
+
+.wrapper > div {
+  width: 30rem;
+  font-size: 2rem;
+  border-radius: 0rem;
+  background-color: #763c2c;
+  object-fit: cover;
+}
+.menu {
+  text-align: center;
+}
+
+.footerino {
+  text-align: center;
+  bottom: 0;
+  padding-top: 2rem;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #32cd32;
+}
+
+@media only screen and (max-width: 1100px) {
+  
+  .wrapper {
+
+    margin-top: 15%;
+}
+
+
+.header {
+  grid-template-columns: 1fr auto auto auto;
+  justify-items: end;
+}
+}
+.logo {
+  grid-column: 2;      
+}
+
+.navbar {
+  grid-column: 1;
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .wrapper {
+    margin-top: 20%;
+}
+.header {
+  grid-template-columns: 1fr auto auto auto;
+  justify-items: end;
+}
+.logo {
+  grid-column: 2;      
+}
+
+.navbar {
+  grid-column: 1;
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .wrapper {
+    margin-top: 25%;
+}
+.header {
+  grid-template-columns: 1fr auto auto;
+  justify-items: start;
+}
+.logo {
+  background-color: greenyellow;
+  float:right;
+  grid-column: 2;      
+}
+
+.navbar {
+  grid-column: 1;
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .header {
+    grid-template-columns: 1fr auto auto;
+    justify-items: start;
+  }
+  .logo {
+    grid-column: 2;      
+  }
+  
+  .navbar {
+    grid-column: 1;
+    display: block;
+  }
+  
+  .wrapper {
+    margin-top: 35%;
+}
+
+@media only screen and (max-width: 300px) {
+  
+  .wrapper {
+    margin-top: 45%;
+}
+
+.header {
+  grid-template-columns: 1fr auto auto;
+  justify-items: start;
+}
+.logo {
+  grid-column: 2;      
+}
+
+.navbar {
+  grid-column: 1;
+  display: block;
+} 
+
+
+@media (min-width: 30rem) {
+  .header {
+    grid-template-columns: 1fr auto auto;
+    justify-items: start;
+  }
+}

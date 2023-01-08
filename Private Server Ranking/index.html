@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+
+    </script>
+    <!--  added function onload to remove nav bar opening at start, also it was openslide and close slide without if screen width, ive added if else stuff -->
+</head>
+
+<body onload="onload()">
+    <img class="logo" src="img/afkosrs1.jpg">
+    <div class="navpc">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+
+    </div>
+
+    <div id="content">
+        <!--   <div class="fixednav">  -->
+
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="closemenu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fa fa-times"></i></a>
+            <img src="img/afkosrs1.jpg">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+        <div class="menu">
+            <p>Method1</p>
+        </div>
+        <div class="menu">
+            <p>Method2</p>
+        </div>
+        <div class="menu">
+            <p>Method3</p>
+        </div>
+        <div class="menu">
+            <p>Method4</p>
+        </div>
+        <div class="menu">
+            <p>Method5</p>
+        </div>
+        <div class="menu">
+            <p>Method6</p>
+        </div>
+    </div>
+
+    <footer class="footerino">Copy</footer>
+    <script src="script/script.js"></script>
+    <script src="script/big.js"></script>
+</body>
+
+
+</html>
